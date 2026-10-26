@@ -1,7 +1,13 @@
-name = "client-enquiry-app"
+name = "clientenquiryforms"
+main = "worker.js"
 compatibility_date = "2026-10-26"
-pages_build_output_dir = "./public"
+
+[assets]
+directory = "./public"
+binding = "ASSETS"
+run_worker_first = ["/api/*"]
+
 [[d1_databases]]
 binding = "DB"
+database_name = "client-enquiry-db"
 database_id = "811e03b7-f5db-4d21-8bd7-4b80475a83d1"
-
