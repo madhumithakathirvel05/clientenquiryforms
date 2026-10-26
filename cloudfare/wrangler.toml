@@ -1,14 +1,7 @@
-{
-
 name = "client-enquiry-app"
 compatibility_date = "2026-10-26"
 pages_build_output_dir = "./public"
-  // ...
-  "d1_databases": [
-    {
-      "binding": "DB",
-      "database_id": "811e03b7-f5db-4d21-8bd7-4b80475a83d1"
-    }
-  ],
-  // ...
-}
+[[d1_databases]]
+binding = "DB"
+database_id = "811e03b7-f5db-4d21-8bd7-4b80475a83d1"
+
