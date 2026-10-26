@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Submit a project enquiry and tell us how we can help.">
+  <title>Client Enquiry | Let's Work Together</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/">Client<span>Desk</span></a>
+    <span class="header-note">Let's build something great.</span>
+  </header>
+
+  <main class="page">
+    <section class="intro">
+      <p class="eyebrow">START A CONVERSATION</p>
+      <h1>Tell us about your <span>project.</span></h1>
+      <p class="subtitle">
+        Share a few details and we'll have the information needed
+        to understand your requirements.
+      </p>
+
+      <div class="benefit">
+        <span class="benefit-icon">✓</span>
+        <div>
+          <strong>Personalised support</strong>
+          <p>Every enquiry gets individual attention.</p>
+        </div>
+      </div>
+      <div class="benefit">
+        <span class="benefit-icon">✓</span>
+        <div>
+          <strong>Clear communication</strong>
+          <p>Tell us your goals, timeline and budget.</p>
+        </div>
+      </div>
+      <div class="benefit">
+        <span class="benefit-icon">✓</span>
+        <div>
+          <strong>Your details stay private</strong>
+          <p>Your enquiry is sent securely to our backend.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="form-card">
+      <div class="form-heading">
+        <p class="eyebrow">PROJECT ENQUIRY</p>
+        <h2>Let's get to know your needs</h2>
+        <p>Fields marked * are required.</p>
+      </div>
+
+      <form id="enquiry-form">
+        <div class="field-grid">
+          <div class="field">
+            <label for="name">Full name *</label>
+            <input id="name" name="name" autocomplete="name"
+              maxlength="100" required placeholder="Your full name">
+          </div>
+          <div class="field">
+            <label for="email">Email address *</label>
+            <input id="email" name="email" type="email"
+              autocomplete="email" maxlength="254" required
+              placeholder="you@example.com">
+          </div>
+          <div class="field">
+            <label for="phone">Phone number *</label>
+            <input id="phone" name="phone" type="tel"
+              autocomplete="tel" maxlength="20" required
+              placeholder="+91 98765 43210">
+          </div>
+          <div class="field">
+            <label for="service">Service required *</label>
+            <select id="service" name="service" required>
+              <option value="">Choose a service</option>
+              <option>Website Development</option>
+              <option>E-commerce Website</option>
+              <option>Website Redesign</option>
+              <option>SEO and Online Presence</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="field full">
+            <label for="budget">Estimated budget</label>
+            <select id="budget" name="budget">
+              <option value="">Select a budget (optional)</option>
+              <option>Below ₹5,000</option>
+              <option>₹5,000–₹15,000</option>
+              <option>₹15,000–₹30,000</option>
+              <option>₹30,000+</option>
+              <option>Not decided yet</option>
+            </select>
+          </div>
+          <div class="field full">
+            <label for="message">Tell us about your project *</label>
+            <textarea id="message" name="message" rows="5"
+              maxlength="3000" required
+              placeholder="What would you like to build?"></textarea>
+          </div>
+        </div>
+
+        <button id="submit-button" type="submit">
+          <span id="button-text">Submit enquiry</span>
+          <span aria-hidden="true">→</span>
+        </button>
+        <p id="form-status" role="status" aria-live="polite"></p>
+        <p class="privacy-note">
+          Please don't include passwords, payment details or other
+          sensitive information in your message.
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>ClientDesk · Client enquiry management</p>
+  </footer>
+</body>
+</html>
